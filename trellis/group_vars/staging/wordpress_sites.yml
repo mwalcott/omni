@@ -14,9 +14,9 @@ wordpress_sites:
     branch: master
     multisite:
       enabled: false
-		ssl:
-			enabled: true
+    ssl:
+      enabled: true
 			provider: letsencrypt
-		env:
-			wp_home: https://omni.mikewalcott.com
-			wp_siteurl: https://omni.mikewalcott.com/wp
+    env:
+      wp_home: https://omni.mikewalcott.com
+      wp_siteurl: https://omni.mikewalcott.com/wp
