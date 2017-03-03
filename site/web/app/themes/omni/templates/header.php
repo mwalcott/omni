@@ -1,4 +1,4 @@
-<header class="banner">
+<header class="banner clearfix">
   <div class="container-fluid">
     <a class="brand float-sm-left" href="<?= esc_url(home_url('/')); ?>">
 	  	<img class="img-fluid" src="<?php the_field('logo', 'option'); ?>"/>

@@ -26,3 +26,11 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+function hero_hook() {
+	do_action('hero_hook');
+}
+
+function content_builder() {
+	do_action('content_builder');
+}

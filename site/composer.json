@@ -47,6 +47,7 @@
     "wpackagist-plugin/optimizely": "3.7.5",
     "wpackagist-plugin/duplicate-post": "3.1.2",
     "wpackagist-plugin/password-protected": "2.0.3",
+    "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
     "roots/soil": "3.7.0"    
   },
   "require-dev": {
