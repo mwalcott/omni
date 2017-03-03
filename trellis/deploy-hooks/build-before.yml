@@ -23,7 +23,7 @@
 
 - name: Copy project local files
   synchronize:
-    src: "{{ project_local_path }}/web/app/themes/sage/dist"
+    src: "{{ project_local_path }}/web/app/themes/omni/dist"
     dest: "{{ deploy_helper.new_release_path }}/web/app/themes/omni"
     group: no
     owner: no
