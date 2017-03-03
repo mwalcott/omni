@@ -10,15 +10,15 @@ vault_users:
 # Variables to accompany `group_vars/staging/wordpress_sites.yml`
 # Note: the site name (`example.com`) must match up with the site name in the above file.
 vault_wordpress_sites:
-  example.com:
+  omnissal.com:
     env:
       db_password: example_dbpassword
       # Generate your keys here: https://roots.io/salts.html
-      auth_key: "generateme"
-      secure_auth_key: "generateme"
-      logged_in_key: "generateme"
-      nonce_key: "generateme"
-      auth_salt: "generateme"
-      secure_auth_salt: "generateme"
-      logged_in_salt: "generateme"
-      nonce_salt: "generateme"
+			auth_key: "u>{TA#khi5^+vXVo|tVh@Y@jb-ECCx.X)At<Jz|PJp7n}A,xl_BF:5I-zWc+9D_#"
+			secure_auth_key: "zRyd:0:m`j%|d$Y#FRym)$Qu5[p(EaD$Y);as`-b[_/kF.u,-Ag`q7PKOgT/MSv7"
+			logged_in_key: "_M2A)qPv6*{M_C9&Df2,dJf/C}u+4&cO@WW1Y;%Lj$X`Nyi2&6?tlc64qExFh;,O"
+			nonce_key: "48t1gI{?4D[|{D|WNDe!ZSQ>*F4VcwvNU_dXyFNJ@D5Q$2J+[ahL+[`/R(KhX[ft"
+			auth_salt: "4|!W;lv8KIyfpAsFfCtruAOD67fS?gq$+bDLXde{o)n4X32XqcHw;$&qMaD;rr5g"
+			secure_auth_salt: "wYvcewO7AB<=6yVT]U:_93wZ7!gh6JM}piTJ^`}hX36m03+C#&.l/<4Ds7!mP4@e"
+			logged_in_salt: "X;><}KlUeJ#Lb=x#oq4-:kF2TGUjwv{ybX]xRe2hl287i!R}{r9vo/6Tu{lz-LY["
+			nonce_salt: "I9AlvNmvprg!ce?`y5Xlz#{Ru#n(31)U2vvpB7MwGIwn1d;=NuxVoSg60g|%?l+p"

@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  example.com:
+  omnissal.com:
     site_hosts:
-      - canonical: staging.example.com
+      - canonical: omni.mikewalcott.com
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
@@ -14,8 +14,9 @@ wordpress_sites:
     branch: master
     multisite:
       enabled: false
-    ssl:
-      enabled: false
-      provider: letsencrypt
-    cache:
-      enabled: false
+		ssl:
+			enabled: true
+			provider: letsencrypt
+		env:
+			wp_home: https://omni.mikewalcott.com
+			wp_siteurl: https://omni.mikewalcott.com/wp
