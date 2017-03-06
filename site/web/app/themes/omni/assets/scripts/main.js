@@ -19,7 +19,9 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        $('.carousel').carousel();       
+        $('#hero').carousel({
+	        pause: false
+        });       
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -74,46 +74,6 @@ if( function_exists('acf_add_options_page') ) {
  */
 function hero() { ?>
 	<div id="hero" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<?php
-				$ni = 0;
-				$n0 = -1;
-				$nactive = '';
-				$nav_args = array(
-					'post_type' => 'projects',
-					'posts_per_page' => 6,
-					'meta_query' => array(
-						array(
-							'key' => 'featured',
-							'compare' => '==',
-							'value' => '1'
-						)
-					)
-				
-				);
-				
-				// the query
-				$nav_query = new \WP_Query( $nav_args ); 
-			?>
-		
-			<?php if ( $nav_query->have_posts() ) : ?>
-			
-				<?php while ( $nav_query->have_posts() ) : $nav_query->the_post(); $ni++; $n0++; ?>
-					<?php 
-						if($nactive == 1) { 
-							$active = 'active'; 
-						} else {
-							$active = '';
-						}  
-					?>
-					<li data-target="#hero" data-slide-to="<?php echo $n0; ?>" class="<?php echo $active; ?>"></li>
-				<?php endwhile; ?>
-			
-				<?php wp_reset_postdata(); ?>
-			
-			<?php endif; ?>
-		  
-		</ol>
 		<div class="carousel-inner" role="listbox">
 			<?php
 				$i = 0; 
