@@ -172,5 +172,3 @@ endif;
 
 }
 add_action('content_builder', __NAMESPACE__ . '\\content_acf');
-
-?>
