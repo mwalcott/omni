@@ -15,10 +15,7 @@ wordpress_sites:
     multisite:
       enabled: false
     ssl:
-      enabled: true
+      enabled: false
       provider: letsencrypt
-    env:
-      wp_home: https://omni.mikewalcott.com
-      wp_siteurl: https://omni.mikewalcott.com/wp
     cache:
       enabled: false
