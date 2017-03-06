@@ -4,8 +4,8 @@
 # Uncomment the lines below and replace `sage` with your theme folder
 #
 ---
-- name: Run npm install
-  command: npm install
+- name: Run yarn install
+  command: yarn install
   connection: local
   args:
     chdir: "{{ project_local_path }}/web/app/themes/omni"
