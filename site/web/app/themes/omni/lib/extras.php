@@ -127,6 +127,7 @@ add_action('hero_hook', __NAMESPACE__ . '\\hero');
 /**
  * Content Builder ACF
  */
+/*
 function content_acf() { 
 
 	// check if the flexible content field has rows of data
@@ -175,3 +176,4 @@ endif;
 
 }
 add_action('content_builder', __NAMESPACE__ . '\\content_acf');
+*/
