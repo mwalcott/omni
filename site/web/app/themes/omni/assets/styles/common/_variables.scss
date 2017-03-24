@@ -1,8 +1,42 @@
 // Grid settings
+$enable-flex:           true;
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:         #295C36;
 
 $heading-font:					'nimbus-sans', 'sans-serif';
+
+$white:									#ffffff;
+
+@mixin delay($seconds) {
+	-webkit-animation-delay: 	$seconds; /* Chrome, Safari, Opera */
+	animation-delay: 					$seconds;
+}
+
+@mixin transparent-background($r,$g,$b,$a) {
+	background: rgb($r,$g,$b);
+	background: rgba($r,$g,$b,$a);
+}
+
+@mixin round($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin cover() {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin transition($time) {
+	-webkit-transition: 	all $time ease-in-out;
+	-moz-transition: 			all $time ease-in-out;
+	-ms-transition: 			all $time ease-in-out;
+	-o-transition: 				all $time ease-in-out;
+	transition: 					all $time ease-in-out;	
+}

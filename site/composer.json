@@ -39,7 +39,7 @@
     "johnpbloch/wordpress": "4.7.2",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-	"wpackagist-plugin/all-in-one-seo-pack": "2.3.11.4",
+		"wpackagist-plugin/all-in-one-seo-pack": "2.3.11.4",
     "wpackagist-plugin/all-in-one-webmaster": "10.0",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.9.6.2",
     "wpackagist-plugin/custom-post-type-ui": "1.5.2",

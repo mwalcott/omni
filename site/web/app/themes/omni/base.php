@@ -18,12 +18,13 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php 
-	  	if(is_front_page()) {
-		  	hero_hook();	
-	  	}
-	  ?>
+    
     <div class="wrap container-fluid" role="document">
+	    <?php 
+		  	if(is_front_page()) {
+			  	hero_hook();	
+		  	}
+		  ?>
       <div class="content row">
         <main class="main">
           <?php 
@@ -32,8 +33,8 @@ use Roots\Sage\Wrapper;
 						} else {
 							include Wrapper\template_path(); 
 						}
+						content_builder();
 	        ?>
-          <?php content_builder(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
@@ -41,11 +42,11 @@ use Roots\Sage\Wrapper;
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->
+	    <?php
+	      do_action('get_footer');
+	      get_template_part('templates/footer');
+	      wp_footer();
+	    ?>
     </div><!-- /.wrap -->
-    <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
-    ?>
   </body>
 </html>

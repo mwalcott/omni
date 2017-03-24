@@ -19,9 +19,6 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        $('#hero').carousel({
-	        pause: false
-        });       
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -30,7 +27,9 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        $('.carousel').carousel({
+	        interval: 5000
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
